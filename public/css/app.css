@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: "Proxima Nova";
+	font-size: 14px;
+}
+
+#container {
+	width: 500px;
+	margin: 0 auto;
+	margin-top: 40px;
+}
+
+a {
+	color: blue;
+}
+
+a:hover {
+	color: rgb(20, 0, 88);
+}
+
+header h1 {
+	margin-bottom: 20px;
+}
+
+header {
+	margin-bottom: 20px;
+}
+
+#lists {
+	list-style: none;
+}
+
+#lists li {
+	margin-bottom: 10px;
+}
+
+p {
+	margin-bottom: 10px;
+	line-height: 1.5em;
+}
+
+article {
+	margin-top: 30px;
+}
+
+footer {
+	color: #CCC;
+	margin-top: 40px;
+}
+
+article .timestamp {
+  margin-top: 10px;
+	color: #888;
+}
+
+

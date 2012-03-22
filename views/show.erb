@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <link href='/css/app.css' rel='stylesheet' />
+    <script src='/js/app.js' type='text/javascript'></script>
+  </head>
+  <body>
+    <section id='container'>
+
+	<header>	
+		<h1>Justin Woodbridge</h1>
+		<p>Not much of anything right now.</p>
+
+	</header>
+
+  <article> 
+    <header>
+      <h2><%= @post.title %></h2>
+      <p class='timestamp'>Written on 
+         <time><%= @post.created_at.strftime "%d %B %Y" %></time></p>
+    </header>
+
+    <section class='content'>
+      <%= @post.body %>
+    </section>
+  </article>
+
+		<footer>
+			<p>My email is jwoodbridge at me dot com</p>
+		</footer>
+
+    </section>
+  </body>
+</html>
