@@ -1,4 +1,5 @@
 require 'sinatra'
+require 'sinatra/namespace'
 require 'data_mapper'
 
 DataMapper.setup :default, "sqlite://#{Dir.pwd}/database.db"
@@ -21,7 +22,7 @@ DataMapper.finalize
 DataMapper.auto_upgrade!
 
 def authenticate!
-  use Rack::Auth::Basic do |u, p| 
+  use Rack::Auth::Basic do |u, p|
     u == 'admin' && p == 'password'
   end
 end
@@ -31,8 +32,10 @@ get '/' do
   erb :index
 end
 
-get '/admin' do
-  erb :admin
+namespace '/admin' do
+  get '/?' do
+    erb :admin
+  end
 end
 
 get '/:slug' do

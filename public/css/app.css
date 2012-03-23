@@ -9,25 +9,46 @@ body {
 }
 
 #container {
-	width: 500px;
+	width: 600px;
 	margin: 0 auto;
-	margin-top: 40px;
+	margin-top: 100px;
+}
+
+
+header {
+	margin-top: 60px;
+}
+
+header p {
+	text-align: center;
+	color: #CCC;
+	font-size: 18px;
+	margin-top: 30px;
+}
+
+#content {
+	padding: 20px;
 }
 
 a {
 	color: blue;
+	font-weight: bold;
+	text-decoration: none;
+	color: rgb(27, 159, 216);
 }
 
 a:hover {
-	color: rgb(20, 0, 88);
+	color: rgb(15, 86, 117);
 }
 
 header h1 {
 	margin-bottom: 20px;
+	margin-top: 0 !important;
 }
 
 header {
-	margin-bottom: 20px;
+	margin-top: 10px;
+	margin-bottom: 60px;
 }
 
 #lists {
@@ -39,7 +60,7 @@ header {
 }
 
 p {
-	margin-bottom: 10px;
+	margin-bottom: 15px;
 	line-height: 1.5em;
 }
 
@@ -48,13 +69,46 @@ article {
 }
 
 footer {
-	color: #CCC;
+	color: #999;
 	margin-top: 40px;
+	border: 3px solid #DDD;
+	border-radius: 10px;
+	padding: 20px;
+	text-align: center;
 }
+
+footer p {
+	margin-bottom: 0 !important;
+}
+
+footer a {
+	color: #555;
+}
+
+footer a:hover {
+	color: #222;
+}
+
 
 article .timestamp {
   margin-top: 10px;
 	color: #888;
 }
 
+#admin textarea {
+	border: none;
+	width: 100%;
+	height: 100%;
+	font-family: Proxima Nova;
+	font-size: 15px;
+	line-height: 1.3em;
+}
+
+#admin textarea:focus {
+	outline: none;
+}
+
+#index ul li {
+	font-size: 25px;
+}
 

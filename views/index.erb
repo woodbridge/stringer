@@ -6,17 +6,24 @@
   <body>
     <section id='container'>
 
-	<header>	
+	<header>
 		<h1>Justin Woodbridge</h1>
 		<p>Not much of anything right now.</p>
 
 	</header>
 
+  <section id='index'>
+
 		<ul id='lists'>
       <% @posts.each do |post|%>
         <li><a href='/<%=post.slug %>'><%= post.title %></a></li>
+        <li><a href='/<%=post.slug %>'>a guide to programming</a></li>
+        <li><a href='/<%=post.slug %>'>a list of albums for programming</a></li>
+        <li><a href='/<%=post.slug %>'>tea and coffee</a></li>
+        <li><a href='/<%=post.slug %>'>good </a></li>
       <% end %>
 		</ul>
+  </section>
 
 		<footer>
 			<p>My email is jwoodbridge at me dot com</p>
